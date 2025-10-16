@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header, footer {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            background-color: #fff;
+        }
+        .container {
+            max-width: 960px;
+            display: flex;
+            background-color: aqua;
+            flex-direction: row;
+            border: 1px solid #ccc;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+        .sidebar-a,
+        .sidebar-b {
+            width: 20%;
+            padding: 10px;
+            border-left: 1px solid #ddd;
+            border-right: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        .main {
+            width: 60%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        footer {
+            border-top: none;
+        }
+    </style>
+</head>
+<body>
+        <header>
+            Header
+        </header>
+        <main class="container">
+            <div>
+                <div class="sidebar-a">Sidebar A</div>
+                <div class="main" >Main content</div>
+                <div class="sidebar-b">Sidebar B</div>
+            </div>
+        </main>
+        <footer>
+            Footer
+        </footer>
+</body>
+</html>

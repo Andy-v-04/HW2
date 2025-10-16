@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .survey-box {
+            border: 1px solid blue;
+            padding: 20px;
+            width: 600px;
+        }
+        .survey-box h2, h3{
+            color: teal;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"]
+        input[type="email"]
+        input[type="date"]
+        select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .radio-group, .checkbox-group {
+            margin-top: 10px;
+        }
+        .radio-group label, .checkbox-group label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body class="survey-box">
+    <header>
+        <img src="logo-vector-IU-01.png" alt="IU Logo" height="100" width="100">
+        <h2>Survey</h2>
+        <p>If you have a moment, we'd appreciate it if you would fill out this survey.</p>
+    </header>
+    <main>
+        <h3>Your Information:</h3>
+        <form>
+            <label for="First Name">First Name:</label>
+            <input type="text" name="First Name" size="30"><br>
+
+            <label for="Last Name">Last Name:</label>
+            <input type="text" name="Last Name" size="30"><br>
+
+            <label for="Email">Email:</label>
+            <input type="email" name="Email" size="30"><br>
+
+            <label for="Date of Birth">Date of Birth:</label>
+            <input type="date" name="Date of Birth" size="30"><br>
+
+        <h3>How did you hear about us?</h3>
+        <div class="radio-group">
+            <label><input type="radio" value="referral" checked name="search">Search engine</label>
+            <label></label><input type="radio" value="referral" checked name="word">Word of mouth</label>
+            <label></label><input type="radio" value="referral" checked name="social">Social Media</label>
+            <label></label><input type="radio" value="referral" checked name="other">Other</label>
+        </div>
+        <h3>Would you like to receive announcements about new CDs and special offers?</h3>
+        <div class="checkbox-group">
+            <label><input type="checkbox" name="offers" value="ON">YES, I'd like that.</label>
+            <label><input type="checkbox" name="email_offers" value="ON">YES, please send me email announcements.</label>
+        </div>
+            
+        
+        <label for="contact">Please contact me by:</label>
+        <select name="contact_method" id="contact">
+            <option value="both">Email or postal mail</option>
+            <option value="email">Email only</option>
+            <option value="postal">Postal mail only</option>
+        </select>
+        <br><br>
+        <input type="button" value="Submit">
+        </form>
+    </main>
+
+</body>
+</html>
